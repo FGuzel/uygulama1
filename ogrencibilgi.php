@@ -42,7 +42,7 @@
 			
 			
 			
-			
+			echo"Bilgiler kaydedildi.";
 			
 			
 		}
