@@ -39,11 +39,8 @@
 		else
 		{
 			
-			
-			
-			
-			
-			
+			echo "Bilgiler kaydedildi.";
+				
 			
 		}
 	}
