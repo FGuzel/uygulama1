@@ -6,26 +6,21 @@
 		Ogr. No:
 		<?php
 		echo"<select name='no'>";
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		$dosya=fopen("bilgi.txt","r");
+		while(!feof($dosya))
+		{
+		$kaynak=fgets($dosya,256);
+			$kaynak=trim($kaynak);
+			$dizi=explode("-",$kaynak);
+			echo "<option>".$dizi[0];
+		}
 		
 		echo"</select>";
 		?>
 	</td>
 </tr>
 <tr>
-	<td>Dere Seciniz:</td>
+	<td>Deres Seciniz:</td>
 	<td>
 		Matematik<input type="radio" name="secim" value="Matematik"><br>
 		Turkce<input type="radio" name="secim" value="Turkce"><br>
